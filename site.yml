@@ -13,3 +13,5 @@
                 RUBY_BUILD_CURL_OPTS: "--tlsv1.2"
         rbenv_users:
           - "{{remote_user}}"
+        rbenv_owner: 'deploy'
+        rbenv_group: 'deploy'
