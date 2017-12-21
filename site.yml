@@ -15,4 +15,3 @@
           - "{{remote_user}}"
         rbenv_owner: 'deploy'
         rbenv_group: 'deploy'
-    - role: sqlite

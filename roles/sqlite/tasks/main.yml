@@ -1,6 +1,0 @@
----
-  - name: yumでsqlite-develインストール
-    yum: name={{item}} state=latest
-    with_items:
-      - sqlite-devel
-    become: true
