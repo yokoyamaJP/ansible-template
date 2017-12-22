@@ -1,3 +1,9 @@
 [submodule "roles/ansible-rbenv-role"]
 	path = roles/ansible-rbenv-role
 	url = https://github.com/yokoyamaJP/ansible-rbenv-role.git
+[submodule "roles/ansible-role-mysql-community"]
+	path = roles/ansible-role-mysql-community
+	url = https://github.com/yokoyamaJP/ansible-role-mysql-community.git
+[submodule "roles/rchouinard.mysql-community-repo"]
+	path = roles/rchouinard.mysql-community-repo
+	url = https://github.com/rchouinard/ansible-role-mysql-community-repo.git
