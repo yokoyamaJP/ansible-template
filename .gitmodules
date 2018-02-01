@@ -7,3 +7,6 @@
 [submodule "roles/rchouinard.mysql-community-repo"]
 	path = roles/rchouinard.mysql-community-repo
 	url = https://github.com/rchouinard/ansible-role-mysql-community-repo.git
+[submodule "roles/ansible-gcc-toolbox"]
+	path = roles/ansible-gcc-toolbox
+	url = https://github.com/andrewrothstein/ansible-gcc-toolbox.git
