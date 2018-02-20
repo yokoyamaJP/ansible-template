@@ -2,6 +2,13 @@
   - hosts: all
     roles:
     - role: ansible-gcc-toolbox
+    - role: ansible-role-mysql-community
+      become: yes
+      mysql_root_pass: "rJ3780p0KMk="
+      mysql_packages:
+      - "mysql-devel"
+      - "mysql-community-server"
+      - "MySQL-python"
     - role: ansible-rbenv-role
       vars:
         rbenv:
@@ -16,10 +23,3 @@
           - "{{remote_user}}"
         rbenv_owner: 'deploy'
         rbenv_group: 'deploy'
-    - role: ansible-role-mysql-community
-      become: yes
-      mysql_root_pass: "rJ3780p0KMk="
-      mysql_packages:
-      - "mysql-devel"
-      - "mysql-community-server"
-      - "MySQL-python"
