@@ -21,3 +21,5 @@
       mysql_root_pass: "rJ3780p0KMk="
       mysql_packages:
       - "mysql-devel"
+      - "mysql-community-server"
+      - "MySQL-python"
