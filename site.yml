@@ -1,5 +1,7 @@
 ---
   - hosts: all
+    pre_tasks:
+    - set_fact: ansible_distribution_major_version=6
     roles:
     - role: ansible-gcc-toolbox
     - role: ansible-role-mysql-community
@@ -8,7 +10,7 @@
       mysql_packages:
       - "mysql-devel"
       - "mysql-community-server"
-      - "MySQL-python"
+      - "MySQL-python27"
     - role: ansible-rbenv-role
       vars:
         rbenv:
